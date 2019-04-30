@@ -1,0 +1,22 @@
+{
+  "name": "alexamaster-autosurf",
+  "version": "1.0.0",
+  "description": "use puppeteer，alexamaster autosurf",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dxxzst/alexamaster-autosurf.git"
+  },
+  "author": "XueSong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dxxzst/alexamaster-autosurf/issues"
+  },
+  "homepage": "https://github.com/dxxzst/alexamaster-autosurf#readme",
+  "dependencies": {
+    "puppeteer": "^1.15.0"
+  }
+}
