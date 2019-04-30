@@ -1,8 +1,6 @@
-const surURL = 'https://www.alexamaster.net/Master/123716';
-
 const puppeteer = require('puppeteer');
-const pub = require('../lib/pub');
-const timer = require('../lib/src/time');
+const pub = require('./lib/pub');
+const timer = require('./lib/time');
 const CheckInterVal = 5 * 60 * 1000; //5分钟检查一下
 let errorHappened = false;
 let lastPoints = '';
@@ -50,12 +48,11 @@ async function run(headless = true) {
                 '--ignore-certifcate-errors-spki-list',
                 '--disable-features=site-per-process'
             ],
-            //executablePath: pub.chromePah,
             headless: headless
         });
         const page = (await browser.pages())[0];
         await pub.pageSetting(page);
-        await page.goto(surURL, {waitUntil: 'networkidle2'});
+        await page.goto(pub.surURL, {waitUntil: 'networkidle2'});
 
         loopRun(browser, page);
     } catch (e) {
@@ -68,4 +65,4 @@ async function run(headless = true) {
     }
 }
 
-module.exports = {run};
+run(false);
