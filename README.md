@@ -11,6 +11,7 @@
 ## 运行程序
 
 - 克隆本项目代码 `clone https://github.com/dxxzst/alexamaster-autosurf.git`
+- 修改lib/pub.js文件中的surURL为你的URL
 - 进入目录 `cd alexamaster-autosurf`
 - 安装资源 `npm install`
 - 启动服务 `npm start` 或 `node index.js`
