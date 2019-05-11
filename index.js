@@ -65,4 +65,4 @@ async function run(headless = true) {
     }
 }
 
-run(false);
+run();
