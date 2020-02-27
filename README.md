@@ -13,7 +13,7 @@
 - 克隆本项目代码 `clone https://github.com/dxxzst/alexamaster-autosurf.git`
 - 修改lib/pub.js文件中的surURL为你的URL
 - 进入目录 `cd alexamaster-autosurf`
-- 安装资源 `npm install`
+- 安装资源 `npm install` 如果失败， 可以尝试执行`sudo npm install --unsafe-perm=true`
 - 启动服务 `npm start` 或 `node index.js`
 
 程序运行后，会每隔5分钟输出一次log，内容为当前时间的积分
